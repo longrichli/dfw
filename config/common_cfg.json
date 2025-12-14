@@ -1,0 +1,32 @@
+{
+    "eth_nb_rx_queue": 4,
+    "eth_nb_tx_queue": 4,
+    "enable_eth_port_mask": 3,
+    "dfw_nat_conf": {
+        "enable_nat": 1,
+        "nat_entry_avail_time_s": 300,
+        "nat_scan_time_ms": 100,
+        "nat_entry_dead_free_time_ms": 100
+    },
+    "dfw_arp_conf": {
+        "arp_entry_dead_free_time_ms": 100,
+        "arp_entry_expire_ms": 100,
+        "arp_entry_max_retry": 3,
+        "arp_entry_max_pending": 1024,
+        "arp_retry_interval_ms": 1000,
+        "arp_scan_time_ms": 500
+    },
+    "dfw_config": {
+        "logfile_path": "../log/dfw.log",
+        "cfgfile_path": "../config/common_cfg.json",
+        "ethfile_path": "../config/eth_cfg.json",
+        "routefile_path": "../config/route_tbl.json",
+        "aclfile_path": "../config/acl_cfg.json",
+        "log_level": "DEBUG"
+    },
+    "dfw_lcore_conf": {
+        "rx_lcore_num": 1,
+        "process_lcore_num": 1,
+        "tx_lcore_num": 1
+    }
+}

@@ -1,0 +1,815 @@
+[32mINFO  [0m [2025-12-14 20:50:10]# dev_name: net_tap0
+[31mERROR [0m [2025-12-14 20:50:10]# dfw_dpdk_init() error: can not find matched port config for portid[0], pci[net_tap0].
+[31mERROR [0m [2025-12-14 20:50:10]# dpdk_init() error.
+[32mINFO  [0m [2025-12-14 20:51:11]# dev_name: net_tap0
+[32mINFO  [0m [2025-12-14 20:51:11]# dev_name: net_tap1
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 1: port 0 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 1: port 0 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 1: port 0 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 1: port 0 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 2: port 0 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 2: port 0 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 2: port 0 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 2: port 0 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 1: port 1 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 1: port 1 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 1: port 1 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 1: port 1 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 2: port 1 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 2: port 1 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 2: port 1 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() lcore 2: port 1 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:51:11]# Port 0 MAC: 9a:52:af:fc:77:c5
+
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() Port 0 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:51:11]# Port 1 MAC: ea:0d:a9:4a:ce:15
+
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_dpdk_init() Port 1 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:51:11]# Checking link status...
+[32mINFO  [0m [2025-12-14 20:51:11]# Port 0 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:51:11]# Port 1 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_rx_loop() started on lcore 1
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_pkg_process_loop() started on lcore 3
+[32mINFO  [0m [2025-12-14 20:51:11]# dfw_tx_loop() started on lcore 2
+[32mINFO  [0m [2025-12-14 20:51:11]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:51:11]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:51:11]#   src_mac = EA:0D:A9:4A:CE:15
+
+[32mINFO  [0m [2025-12-14 20:51:11]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:51:11]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:51:11]# 
+
+[32mINFO  [0m [2025-12-14 20:51:11]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:51:11]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:51:11]#   src_mac = 9A:52:AF:FC:77:C5
+
+[32mINFO  [0m [2025-12-14 20:51:11]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:51:11]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:51:11]# 
+
+[32mINFO  [0m [2025-12-14 20:51:12]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   src_mac = EA:0D:A9:4A:CE:15
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:51:12]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:51:12]# 
+
+[32mINFO  [0m [2025-12-14 20:51:12]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   dst_mac = 33:33:FF:4A:CE:15
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   src_mac = EA:0D:A9:4A:CE:15
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:51:12]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:51:12]# 
+
+[32mINFO  [0m [2025-12-14 20:51:12]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   src_mac = 9A:52:AF:FC:77:C5
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:51:12]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:51:12]# 
+
+[32mINFO  [0m [2025-12-14 20:51:12]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   dst_mac = 33:33:FF:FC:77:C5
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   src_mac = 9A:52:AF:FC:77:C5
+
+[32mINFO  [0m [2025-12-14 20:51:12]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:51:12]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:51:12]# 
+
+[32mINFO  [0m [2025-12-14 20:51:13]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:51:13]#   dst_mac = 33:33:00:00:00:02
+
+[32mINFO  [0m [2025-12-14 20:51:13]#   src_mac = EA:0D:A9:4A:CE:15
+
+[32mINFO  [0m [2025-12-14 20:51:13]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:51:13]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:51:13]# 
+
+[32mINFO  [0m [2025-12-14 20:51:13]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:51:13]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:51:13]#   src_mac = EA:0D:A9:4A:CE:15
+
+[32mINFO  [0m [2025-12-14 20:51:13]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:51:13]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:51:13]# 
+
+[32mINFO  [0m [2025-12-14 20:52:03]# Signal 2 received, preparing to exit...
+
+[32mINFO  [0m [2025-12-14 20:52:03]# exit...
+[32mINFO  [0m [2025-12-14 20:52:03]# exit done.
+[32mINFO  [0m [2025-12-14 20:54:14]# dev_name: net_tap0
+[32mINFO  [0m [2025-12-14 20:54:14]# dev_name: net_tap1
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 1: port 0 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 1: port 0 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 1: port 0 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 1: port 0 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 2: port 0 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 2: port 0 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 2: port 0 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 2: port 0 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 1: port 1 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 1: port 1 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 1: port 1 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 1: port 1 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 2: port 1 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 2: port 1 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 2: port 1 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() lcore 2: port 1 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:14]# Port 0 MAC: c2:08:ea:ac:e9:c5
+
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() Port 0 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:54:14]# Port 1 MAC: 4e:e5:cd:6c:ee:96
+
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_dpdk_init() Port 1 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:54:14]# Checking link status...
+[32mINFO  [0m [2025-12-14 20:54:14]# Port 0 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:54:14]# Port 1 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_rx_loop() started on lcore 1
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_pkg_process_loop() started on lcore 3
+[32mINFO  [0m [2025-12-14 20:54:14]# dfw_tx_loop() started on lcore 2
+[32mINFO  [0m [2025-12-14 20:54:14]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   src_mac = C2:08:EA:AC:E9:C5
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:14]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:14]# 
+
+[32mINFO  [0m [2025-12-14 20:54:14]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   src_mac = 4E:E5:CD:6C:EE:96
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:14]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:14]# 
+
+[32mINFO  [0m [2025-12-14 20:54:14]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   src_mac = C2:08:EA:AC:E9:C5
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:14]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:14]# 
+
+[32mINFO  [0m [2025-12-14 20:54:14]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   src_mac = 4E:E5:CD:6C:EE:96
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:14]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:14]# 
+
+[32mINFO  [0m [2025-12-14 20:54:14]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   dst_mac = 33:33:FF:AC:E9:C5
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   src_mac = C2:08:EA:AC:E9:C5
+
+[32mINFO  [0m [2025-12-14 20:54:14]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:14]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:14]# 
+
+[32mINFO  [0m [2025-12-14 20:54:15]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   dst_mac = 33:33:FF:6C:EE:96
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   src_mac = 4E:E5:CD:6C:EE:96
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:15]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:15]# 
+
+[32mINFO  [0m [2025-12-14 20:54:15]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   src_mac = C2:08:EA:AC:E9:C5
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:15]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:15]# 
+
+[32mINFO  [0m [2025-12-14 20:54:15]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   dst_mac = 33:33:00:00:00:02
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   src_mac = C2:08:EA:AC:E9:C5
+
+[32mINFO  [0m [2025-12-14 20:54:15]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:15]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:15]# 
+
+[32mINFO  [0m [2025-12-14 20:54:19]# Signal 2 received, preparing to exit...
+
+[32mINFO  [0m [2025-12-14 20:54:19]# exit...
+[32mINFO  [0m [2025-12-14 20:54:19]# exit done.
+[32mINFO  [0m [2025-12-14 20:54:46]# dev_name: net_tap0
+[32mINFO  [0m [2025-12-14 20:54:46]# dev_name: net_tap1
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 1: port 0 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 1: port 0 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 1: port 0 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 1: port 0 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 2: port 0 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 2: port 0 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 2: port 0 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 2: port 0 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 1: port 1 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 1: port 1 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 1: port 1 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 1: port 1 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 2: port 1 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 2: port 1 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 2: port 1 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() lcore 2: port 1 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:46]# Port 0 MAC: a6:e6:3b:d8:1d:d7
+
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() Port 0 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:54:46]# Port 1 MAC: f2:dc:3e:97:c4:2f
+
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_dpdk_init() Port 1 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:54:46]# Checking link status...
+[32mINFO  [0m [2025-12-14 20:54:46]# Port 0 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:54:46]# Port 1 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_rx_loop() started on lcore 1
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_pkg_process_loop() started on lcore 3
+[32mINFO  [0m [2025-12-14 20:54:46]# dfw_tx_loop() started on lcore 2
+[32mINFO  [0m [2025-12-14 20:54:46]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   src_mac = F2:DC:3E:97:C4:2F
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:46]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:46]# 
+
+[32mINFO  [0m [2025-12-14 20:54:46]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   src_mac = A6:E6:3B:D8:1D:D7
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:46]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:46]# 
+
+[32mINFO  [0m [2025-12-14 20:54:46]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   src_mac = F2:DC:3E:97:C4:2F
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:46]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:46]# 
+
+[32mINFO  [0m [2025-12-14 20:54:46]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   dst_mac = 33:33:FF:97:C4:2F
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   src_mac = F2:DC:3E:97:C4:2F
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:46]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:46]# 
+
+[32mINFO  [0m [2025-12-14 20:54:46]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   src_mac = A6:E6:3B:D8:1D:D7
+
+[32mINFO  [0m [2025-12-14 20:54:46]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:46]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:46]# 
+
+[32mINFO  [0m [2025-12-14 20:54:47]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   dst_mac = 33:33:FF:D8:1D:D7
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   src_mac = A6:E6:3B:D8:1D:D7
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:47]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:47]# 
+
+[32mINFO  [0m [2025-12-14 20:54:47]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   src_mac = F2:DC:3E:97:C4:2F
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:47]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:47]# 
+
+[32mINFO  [0m [2025-12-14 20:54:47]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   dst_mac = 33:33:00:00:00:02
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   src_mac = F2:DC:3E:97:C4:2F
+
+[32mINFO  [0m [2025-12-14 20:54:47]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:47]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:47]# 
+
+[32mINFO  [0m [2025-12-14 20:54:49]# Signal 2 received, preparing to exit...
+
+[32mINFO  [0m [2025-12-14 20:54:49]# exit...
+[32mINFO  [0m [2025-12-14 20:54:49]# exit done.
+[32mINFO  [0m [2025-12-14 20:54:52]# dev_name: net_tap0
+[32mINFO  [0m [2025-12-14 20:54:52]# dev_name: net_tap1
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 1: port 0 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 1: port 0 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 1: port 0 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 1: port 0 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 2: port 0 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 2: port 0 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 2: port 0 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 2: port 0 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 1: port 1 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 1: port 1 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 1: port 1 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 1: port 1 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 2: port 1 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 2: port 1 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 2: port 1 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() lcore 2: port 1 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:52]# Port 0 MAC: 62:a5:2c:8c:ee:49
+
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() Port 0 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:54:52]# Port 1 MAC: 26:b6:05:cf:ed:07
+
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_dpdk_init() Port 1 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:54:52]# Checking link status...
+[32mINFO  [0m [2025-12-14 20:54:52]# Port 0 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:54:52]# Port 1 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_rx_loop() started on lcore 1
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_pkg_process_loop() started on lcore 3
+[32mINFO  [0m [2025-12-14 20:54:52]# dfw_tx_loop() started on lcore 2
+[32mINFO  [0m [2025-12-14 20:54:52]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   src_mac = 26:B6:05:CF:ED:07
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:52]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:52]# 
+
+[32mINFO  [0m [2025-12-14 20:54:52]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   src_mac = 62:A5:2C:8C:EE:49
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:52]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:52]# 
+
+[32mINFO  [0m [2025-12-14 20:54:52]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   dst_mac = 33:33:FF:8C:EE:49
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   src_mac = 62:A5:2C:8C:EE:49
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:52]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:52]# 
+
+[32mINFO  [0m [2025-12-14 20:54:52]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   dst_mac = 33:33:FF:CF:ED:07
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   src_mac = 26:B6:05:CF:ED:07
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:52]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:52]# 
+
+[32mINFO  [0m [2025-12-14 20:54:52]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   src_mac = 26:B6:05:CF:ED:07
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:52]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:52]# 
+
+[32mINFO  [0m [2025-12-14 20:54:52]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   src_mac = 62:A5:2C:8C:EE:49
+
+[32mINFO  [0m [2025-12-14 20:54:52]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:52]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:52]# 
+
+[32mINFO  [0m [2025-12-14 20:54:53]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:53]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:53]#   src_mac = 62:A5:2C:8C:EE:49
+
+[32mINFO  [0m [2025-12-14 20:54:53]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:53]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:53]# 
+
+[32mINFO  [0m [2025-12-14 20:54:53]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:53]#   dst_mac = 33:33:00:00:00:02
+
+[32mINFO  [0m [2025-12-14 20:54:53]#   src_mac = 62:A5:2C:8C:EE:49
+
+[32mINFO  [0m [2025-12-14 20:54:53]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:53]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:53]# 
+
+[32mINFO  [0m [2025-12-14 20:54:53]# Signal 2 received, preparing to exit...
+
+[32mINFO  [0m [2025-12-14 20:54:53]# exit...
+[32mINFO  [0m [2025-12-14 20:54:53]# exit done.
+[32mINFO  [0m [2025-12-14 20:54:59]# dev_name: net_tap0
+[32mINFO  [0m [2025-12-14 20:54:59]# dev_name: net_tap1
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 1: port 0 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 1: port 0 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 1: port 0 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 1: port 0 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 2: port 0 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 2: port 0 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 2: port 0 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 2: port 0 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 1: port 1 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 1: port 1 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 1: port 1 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 1: port 1 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 2: port 1 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 2: port 1 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 2: port 1 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() lcore 2: port 1 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:54:59]# Port 0 MAC: ce:47:f5:e7:5a:4d
+
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() Port 0 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:54:59]# Port 1 MAC: 02:81:67:21:8e:44
+
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_dpdk_init() Port 1 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:54:59]# Checking link status...
+[32mINFO  [0m [2025-12-14 20:54:59]# Port 0 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:54:59]# Port 1 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_rx_loop() started on lcore 1
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_pkg_process_loop() started on lcore 3
+[32mINFO  [0m [2025-12-14 20:54:59]# dfw_tx_loop() started on lcore 2
+[32mINFO  [0m [2025-12-14 20:54:59]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:59]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:59]#   src_mac = 02:81:67:21:8E:44
+
+[32mINFO  [0m [2025-12-14 20:54:59]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:59]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:59]# 
+
+[32mINFO  [0m [2025-12-14 20:54:59]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:54:59]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:54:59]#   src_mac = CE:47:F5:E7:5A:4D
+
+[32mINFO  [0m [2025-12-14 20:54:59]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:54:59]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:54:59]# 
+
+[32mINFO  [0m [2025-12-14 20:55:00]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   dst_mac = 33:33:FF:21:8E:44
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   src_mac = 02:81:67:21:8E:44
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:00]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:00]# 
+
+[32mINFO  [0m [2025-12-14 20:55:00]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   src_mac = CE:47:F5:E7:5A:4D
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:00]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:00]# 
+
+[32mINFO  [0m [2025-12-14 20:55:00]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   dst_mac = 33:33:FF:E7:5A:4D
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   src_mac = CE:47:F5:E7:5A:4D
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:00]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:00]# 
+
+[32mINFO  [0m [2025-12-14 20:55:00]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   src_mac = 02:81:67:21:8E:44
+
+[32mINFO  [0m [2025-12-14 20:55:00]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:00]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:00]# 
+
+[32mINFO  [0m [2025-12-14 20:55:01]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:01]#   dst_mac = 33:33:00:00:00:02
+
+[32mINFO  [0m [2025-12-14 20:55:01]#   src_mac = CE:47:F5:E7:5A:4D
+
+[32mINFO  [0m [2025-12-14 20:55:01]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:01]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:01]# 
+
+[32mINFO  [0m [2025-12-14 20:55:01]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:01]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:01]#   src_mac = CE:47:F5:E7:5A:4D
+
+[32mINFO  [0m [2025-12-14 20:55:01]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:01]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:01]# 
+
+[32mINFO  [0m [2025-12-14 20:55:05]# Signal 2 received, preparing to exit...
+
+[32mINFO  [0m [2025-12-14 20:55:05]# exit...
+[32mINFO  [0m [2025-12-14 20:55:05]# exit done.
+[32mINFO  [0m [2025-12-14 20:55:43]# dev_name: net_tap0
+[32mINFO  [0m [2025-12-14 20:55:43]# dev_name: net_tap1
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 1: port 0 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 1: port 0 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 1: port 0 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 1: port 0 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 2: port 0 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 2: port 0 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 2: port 0 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 2: port 0 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 1: port 1 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 1: port 1 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 1: port 1 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 1: port 1 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 2: port 1 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 2: port 1 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 2: port 1 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() lcore 2: port 1 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:55:43]# Port 0 MAC: 6a:ab:3a:4e:96:ab
+
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() Port 0 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:55:43]# Port 1 MAC: 06:6b:ad:e8:90:7d
+
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_dpdk_init() Port 1 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:55:43]# Checking link status...
+[32mINFO  [0m [2025-12-14 20:55:43]# Port 0 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:55:43]# Port 1 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_rx_loop() started on lcore 1
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_pkg_process_loop() started on lcore 3
+[32mINFO  [0m [2025-12-14 20:55:43]# dfw_tx_loop() started on lcore 2
+[32mINFO  [0m [2025-12-14 20:55:43]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   src_mac = 06:6B:AD:E8:90:7D
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:43]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:43]# 
+
+[32mINFO  [0m [2025-12-14 20:55:43]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   src_mac = 6A:AB:3A:4E:96:AB
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:43]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:43]# 
+
+[32mINFO  [0m [2025-12-14 20:55:43]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   src_mac = 06:6B:AD:E8:90:7D
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:43]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:43]# 
+
+[32mINFO  [0m [2025-12-14 20:55:43]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   src_mac = 6A:AB:3A:4E:96:AB
+
+[32mINFO  [0m [2025-12-14 20:55:43]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:43]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:43]# 
+
+[32mINFO  [0m [2025-12-14 20:55:44]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:44]#   dst_mac = 33:33:FF:E8:90:7D
+
+[32mINFO  [0m [2025-12-14 20:55:44]#   src_mac = 06:6B:AD:E8:90:7D
+
+[32mINFO  [0m [2025-12-14 20:55:44]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:44]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:44]# 
+
+[32mINFO  [0m [2025-12-14 20:55:44]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:44]#   dst_mac = 33:33:FF:4E:96:AB
+
+[32mINFO  [0m [2025-12-14 20:55:44]#   src_mac = 6A:AB:3A:4E:96:AB
+
+[32mINFO  [0m [2025-12-14 20:55:44]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:44]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:44]# 
+
+[32mINFO  [0m [2025-12-14 20:55:45]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:45]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:45]#   src_mac = 06:6B:AD:E8:90:7D
+
+[32mINFO  [0m [2025-12-14 20:55:45]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:45]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:45]# 
+
+[32mINFO  [0m [2025-12-14 20:55:45]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:45]#   dst_mac = 33:33:00:00:00:02
+
+[32mINFO  [0m [2025-12-14 20:55:45]#   src_mac = 06:6B:AD:E8:90:7D
+
+[32mINFO  [0m [2025-12-14 20:55:45]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:45]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:45]# 
+
+[32mINFO  [0m [2025-12-14 20:55:46]# Signal 2 received, preparing to exit...
+
+[32mINFO  [0m [2025-12-14 20:55:46]# exit...
+[32mINFO  [0m [2025-12-14 20:55:46]# exit done.
+[32mINFO  [0m [2025-12-14 20:55:59]# dev_name: net_tap0
+[32mINFO  [0m [2025-12-14 20:55:59]# dev_name: net_tap1
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 1: port 0 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 1: port 0 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 1: port 0 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 1: port 0 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 2: port 0 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 2: port 0 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 2: port 0 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 2: port 0 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 1: port 1 rx_queue 0
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 1: port 1 rx_queue 1
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 1: port 1 rx_queue 2
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 1: port 1 rx_queue 3
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 2: port 1 tx_queue 0
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 2: port 1 tx_queue 1
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 2: port 1 tx_queue 2
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() lcore 2: port 1 tx_queue 3
+[32mINFO  [0m [2025-12-14 20:55:59]# Port 0 MAC: 96:c8:16:1e:a0:87
+
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() Port 0 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:55:59]# Port 1 MAC: 1e:71:59:d0:44:99
+
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_dpdk_init() Port 1 initialized successfully.
+[32mINFO  [0m [2025-12-14 20:55:59]# Checking link status...
+[32mINFO  [0m [2025-12-14 20:55:59]# Port 0 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:55:59]# Port 1 Link Status: UP, Speed: 10000 Mbps, Duplex: FULL
+
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_rx_loop() started on lcore 1
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_pkg_process_loop() started on lcore 3
+[32mINFO  [0m [2025-12-14 20:55:59]# dfw_tx_loop() started on lcore 2
+[32mINFO  [0m [2025-12-14 20:55:59]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:59]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:59]#   src_mac = 1E:71:59:D0:44:99
+
+[32mINFO  [0m [2025-12-14 20:55:59]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:59]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:59]# 
+
+[32mINFO  [0m [2025-12-14 20:55:59]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:55:59]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:55:59]#   src_mac = 96:C8:16:1E:A0:87
+
+[32mINFO  [0m [2025-12-14 20:55:59]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:55:59]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:55:59]# 
+
+[32mINFO  [0m [2025-12-14 20:56:00]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   dst_mac = 33:33:FF:1E:A0:87
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   src_mac = 96:C8:16:1E:A0:87
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:56:00]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:56:00]# 
+
+[32mINFO  [0m [2025-12-14 20:56:00]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   src_mac = 96:C8:16:1E:A0:87
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:56:00]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:56:00]# 
+
+[32mINFO  [0m [2025-12-14 20:56:00]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   src_mac = 1E:71:59:D0:44:99
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:56:00]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:56:00]# 
+
+[32mINFO  [0m [2025-12-14 20:56:00]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   dst_mac = 33:33:FF:D0:44:99
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   src_mac = 1E:71:59:D0:44:99
+
+[32mINFO  [0m [2025-12-14 20:56:00]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:56:00]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:56:00]# 
+
+[32mINFO  [0m [2025-12-14 20:56:01]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:56:01]#   dst_mac = 33:33:00:00:00:16
+
+[32mINFO  [0m [2025-12-14 20:56:01]#   src_mac = 96:C8:16:1E:A0:87
+
+[32mINFO  [0m [2025-12-14 20:56:01]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:56:01]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:56:01]# 
+
+[32mINFO  [0m [2025-12-14 20:56:01]# Ethernet Header:
+
+[32mINFO  [0m [2025-12-14 20:56:01]#   dst_mac = 33:33:00:00:00:02
+
+[32mINFO  [0m [2025-12-14 20:56:01]#   src_mac = 96:C8:16:1E:A0:87
+
+[32mINFO  [0m [2025-12-14 20:56:01]#   ether_type = 0x86DD
+[32mINFO  [0m [2025-12-14 20:56:01]#  (IPv6)
+[32mINFO  [0m [2025-12-14 20:56:01]# 
+
+[32mINFO  [0m [2025-12-14 20:56:02]# Signal 2 received, preparing to exit...
+
+[32mINFO  [0m [2025-12-14 20:56:02]# exit...
+[32mINFO  [0m [2025-12-14 20:56:02]# exit done.

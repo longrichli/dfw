@@ -1,0 +1,25 @@
+{
+    "routes": [
+        {
+            "destination": "192.168.1.0",
+            "netmask": "255.255.255.0",
+            "gateway": "0.0.0.0",
+            "out_port": "lan0",
+            "metric": 10
+        },
+        {
+            "destination": "10.0.0.0",
+            "netmask": "255.0.0.0",
+            "gateway": "192.168.1.1",
+            "out_port": "lan0",
+            "metric": 20
+        },
+        {
+            "destination": "2.2.0.0",
+            "netmask": "255.255.255.0",
+            "gateway": "2.2.0.1",
+            "out_port": "wan0",
+            "metric": 10
+        }
+    ]
+}
