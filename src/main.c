@@ -87,7 +87,7 @@ int dfw_rx_loop(void *arg) {
                 process_ring = dfw_ctx->dfw_ring_conf.process_rings[process_ring_idx];
                 assert(process_ring);
 
-                if(unlikely(rte_ring_mp_enqueue(process_ring, (void *)pkt_burst[i]) < 0)) {
+                if(unlikely(rte_ring_enqueue(process_ring, (void *)pkt_burst[i]) < 0)) {
                     rte_pktmbuf_free(pkt_burst[i]);
                     dfw_log_write(LOG_WARNING, "dfw_rx_loop() rte_ring_enqueue_burst() drop a packet.");
                 }    
@@ -124,7 +124,7 @@ int dfw_tx_loop(void *arg) {
             assert(out_ring);
             uint16_t nb_pkt = 0;
             
-            nb_pkt = rte_ring_sc_dequeue_burst(out_ring, (void **)pkt_burst, MAX_PKT_BURST, NULL);
+            nb_pkt = rte_ring_dequeue_burst(out_ring, (void **)pkt_burst, MAX_PKT_BURST, NULL);
             if(unlikely(nb_pkt == 0)) {
                 rte_pause();
                 continue;

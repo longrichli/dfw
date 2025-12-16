@@ -31,7 +31,7 @@ int dfw_nat_send_create_nat_entry_msg(dfwSnatKey *key, uint16_t out_port) {
     nat_create_msg->out_port = out_port;
     msg->msg_type = DFW_MSG_CREATE_NAT_ENTRY;
     msg->msg_content = nat_create_msg;
-    if(rte_ring_mp_enqueue(dfw_ctx->dfw_ring_conf.msg_from_proc_lcore, (void *)msg) != 0) {
+    if(rte_ring_enqueue(dfw_ctx->dfw_ring_conf.msg_from_proc_lcore, (void *)msg) != 0) {
         rte_free(msg);
         rte_free(nat_create_msg);
         return -1;

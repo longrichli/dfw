@@ -339,7 +339,7 @@ int dfw_pkg_process_loop(void *arg) {
         uint16_t nb_pkt = 0;
         cur_tsc = rte_rdtsc();
 
-        nb_pkt = rte_ring_sc_dequeue_burst(process_ring, (void **)pkt_burst, MAX_PKT_BURST, NULL);
+        nb_pkt = rte_ring_dequeue_burst(process_ring, (void **)pkt_burst, MAX_PKT_BURST, NULL);
         if(unlikely(nb_pkt == 0)) {
             rte_pause();
             continue;
@@ -360,7 +360,7 @@ int dfw_pkg_process_loop(void *arg) {
                 uint16_t queue_id = flow_hash % dfw_ctx->eth_nb_tx_queue;
                 struct rte_ring *tx_ring = 
                     dfw_ctx->dfw_ring_conf.tx_queue_rings[portid][queue_id];
-                if(rte_ring_mp_enqueue(tx_ring, (void *)pkt_burst[k]) < 0) {
+                if(rte_ring_enqueue(tx_ring, (void *)pkt_burst[k]) < 0) {
                     rte_pktmbuf_free(pkt_burst[k]);
                 }
             }

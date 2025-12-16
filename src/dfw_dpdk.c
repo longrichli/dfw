@@ -399,7 +399,7 @@ int dfw_dpdk_init(int argc, char **argv) {
                 ring_name,
                 dfw_ctx->dfw_ring_conf.ring_elem_count,
                 rte_socket_id(),
-                RING_F_MP_HTS_ENQ | RING_F_SC_DEQ
+                0
             );
         if(!dfw_ctx->dfw_ring_conf.process_rings[i]) {
             dfw_log_write(LOG_ERROR, "dfw_dpdk_init() rte_ring_create() error: create process ring failed. "
@@ -431,7 +431,7 @@ int dfw_dpdk_init(int argc, char **argv) {
                     ring_name,
                     dfw_ctx->dfw_ring_conf.ring_elem_count,
                     rte_socket_id(),
-                    RING_F_MP_HTS_ENQ | RING_F_SC_DEQ
+                    0
                 );
             if(!dfw_ctx->dfw_ring_conf.tx_queue_rings[portid][q]) {
                 dfw_log_write(LOG_ERROR, "dfw_dpdk_init() rte_ring_create() error: create tx ring failed. "
@@ -446,7 +446,7 @@ int dfw_dpdk_init(int argc, char **argv) {
     dfw_ctx->dfw_ring_conf.msg_from_proc_lcore = 
         rte_ring_create("ring_msg_from_proc_lcore", 
                         dfw_ctx->dfw_ring_conf.ring_elem_count,
-                        rte_socket_id(), RING_F_MP_HTS_ENQ | RING_F_SC_DEQ);
+                        rte_socket_id(), 0);
     if(!dfw_ctx->dfw_ring_conf.msg_from_proc_lcore) {
         dfw_log_write(LOG_ERROR, "dfw_dpdk_init() rte_ring_create() error: can not create msg_from_proc_locre ring.");
         goto __finish;

@@ -207,7 +207,7 @@ int dfw_send_arp_pending_flash_msg(uint32_t ip) {
         return -1;
     }
     *(uint32_t *)msg->msg_content = ip;
-    if (rte_ring_mp_enqueue(dfw_ctx->dfw_ring_conf.msg_from_proc_lcore, msg) < 0) {
+    if (rte_ring_enqueue(dfw_ctx->dfw_ring_conf.msg_from_proc_lcore, msg) < 0) {
         rte_free(msg->msg_content);
         rte_free(msg);
         return -1;
@@ -249,7 +249,7 @@ int dfw_send_arp_entry_create_msg(uint32_t ip,
     msg->msg_type = DFW_MSG_CREATE_ARP_ENTRY;
     msg->msg_content = arp_msg;
 
-    if (rte_ring_mp_enqueue(dfw_ctx->dfw_ring_conf.msg_from_proc_lcore, msg) < 0) {
+    if (rte_ring_enqueue(dfw_ctx->dfw_ring_conf.msg_from_proc_lcore, msg) < 0) {
         rte_pktmbuf_free(mbuf_clone);
         rte_free(arp_msg);
         rte_free(msg);
@@ -267,7 +267,7 @@ int dfw_append_mbuf_to_pending(struct rte_mbuf *mbuf, dfwArpEntry *arp_entry) {
     if (mbuf_clone == NULL) {
         return -1;
     }
-    if(rte_ring_mp_enqueue(arp_entry->pending, (void *)mbuf_clone) < 0) {
+    if(rte_ring_sp_enqueue(arp_entry->pending, (void *)mbuf_clone) < 0) {
         rte_pktmbuf_free(mbuf_clone);
         return -1;
     }
@@ -313,7 +313,7 @@ static int dfw_arp_send_arp_pkt(struct rte_ether_addr *arp_sa,
     uint16_t txq = (arp_dip % dfw_ctx->eth_nb_tx_queue);
     struct rte_ring *tx_ring = 
                 dfw_ctx->dfw_ring_conf.tx_queue_rings[out_port][txq];
-    if(rte_ring_mp_enqueue(tx_ring, (void *)mbuf) < 0) {
+    if(rte_ring_enqueue(tx_ring, (void *)mbuf) < 0) {
         rte_pktmbuf_free(mbuf);
     }
     return 0;
@@ -419,7 +419,7 @@ int dfw_arp_flash_arp_pending(dfwArpEntry *arp_entry) {
     struct rte_mbuf *pkt_mbufs[MAX_PKT_BURST] = {0};
     unsigned int nb_pkt = 0;
     
-    while((nb_pkt = rte_ring_sc_dequeue_burst(arp_entry->pending, 
+    while((nb_pkt = rte_ring_dequeue_burst(arp_entry->pending, 
                                     (void **)pkt_mbufs,
                                     MAX_PKT_BURST, NULL)) > 0) {
         for(unsigned int i = 0; i < nb_pkt; i++) {
@@ -439,7 +439,7 @@ int dfw_arp_flash_arp_pending(dfwArpEntry *arp_entry) {
             uint16_t queue_id = flow_hash % dfw_ctx->eth_nb_tx_queue;
                 struct rte_ring *tx_ring = 
                     dfw_ctx->dfw_ring_conf.tx_queue_rings[arp_entry->out_port][queue_id];
-                if(rte_ring_mp_enqueue(tx_ring, (void *)mbuf) < 0) {
+                if(rte_ring_enqueue(tx_ring, (void *)mbuf) < 0) {
                     rte_pktmbuf_free(mbuf);
                 }
         }
