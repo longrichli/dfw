@@ -77,7 +77,7 @@ static int load_route_cfg(void)
                 dfw_log_write(LOG_ERROR, "Invalid destination address: %s", destination->valuestring);
                 goto __finish;
             }
-            entry->destination = rte_cpu_to_be_32(entry->destination);
+
         } else {
             dfw_log_write(LOG_ERROR, "Destination not found or invalid");
             goto __finish;
@@ -90,7 +90,7 @@ static int load_route_cfg(void)
                 dfw_log_write(LOG_ERROR, "Invalid netmask address: %s", netmask->valuestring);
                 goto __finish;
             }
-            entry->netmask = rte_cpu_to_be_32(entry->netmask);
+
         } else {
             dfw_log_write(LOG_ERROR, "Netmask not found or invalid");
             goto __finish;
@@ -103,7 +103,7 @@ static int load_route_cfg(void)
                 dfw_log_write(LOG_ERROR, "Invalid gateway address: %s", gateway->valuestring);
                 goto __finish;
             }
-            entry->gateway = rte_cpu_to_be_32(entry->gateway);
+
         } else {
             dfw_log_write(LOG_ERROR, "Gateway not found or invalid");
             goto __finish;
@@ -242,8 +242,6 @@ static int load_acl_cfg(void)
             dfw_log_write(LOG_ERROR, "load_acl_cfg: Invalid src_ip/src_mask value");
             goto __finish;
         }
-        rule->src_ip = rte_cpu_to_be_32(rule->src_ip);
-        rule->src_mask = rte_cpu_to_be_32(rule->src_mask);
 
         /* dst_ip */
         cJSON *jdst_ip = cJSON_GetObjectItem(r, "dst_ip");
@@ -258,8 +256,6 @@ static int load_acl_cfg(void)
             dfw_log_write(LOG_ERROR, "load_acl_cfg: Invalid dst_ip/dst_mask value");
             goto __finish;
         }
-        rule->dst_ip = rte_cpu_to_be_32(rule->dst_ip);
-        rule->dst_mask = rte_cpu_to_be_32(rule->dst_mask);
 
         /* proto */
         cJSON *jproto = cJSON_GetObjectItem(r, "proto");
@@ -450,7 +446,6 @@ static int load_eth_cfg(void) {
             dfw_log_write(LOG_ERROR, "Invalid IP address: %s", jip->valuestring);
             goto __finish;
         }
-        entry->ip = rte_cpu_to_be_32(entry->ip);
 
         /* netmask */
         cJSON *jmask = cJSON_GetObjectItem(p, "netmask");
@@ -473,7 +468,6 @@ static int load_eth_cfg(void) {
             dfw_log_write(LOG_ERROR, "Invalid gateway address: %s", jgw->valuestring);
             goto __finish;
         }
-        entry->gateway = rte_cpu_to_be_32(entry->gateway);
 
         dfw_ctx->dfw_eth_port_conf.eth_port_entry_count++;
     }
